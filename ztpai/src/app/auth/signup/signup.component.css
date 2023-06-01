@@ -1,0 +1,86 @@
+.signup-component {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-card {
+  height: 90%;
+  width: 80%;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.left-column, .right-column {
+  padding: 80px 40px 80px 40px;
+  background-color: var(--colorOnBackground);
+  color: var(--text);
+}
+
+.left-column {
+  padding: 80px 40px 80px 40px;
+  background-color: var(--primary);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.img{
+  width: 50%;
+  height: 50%;
+  background-image: url("./../../../assets/illustration.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.description {
+  color: gray;
+  font-weight: 200;
+  font-size: 14px;
+  margin-block: 0;
+}
+
+.title {
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 600;
+  margin-block: 0;
+  margin: 6px 0;
+}
+
+.form-group{
+  margin: 16px 0;
+}
+
+.avatar {
+  display: inline;
+  height: 72px;
+  margin-left: 8px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.refreshBtn {
+  display: inline;
+  height: 36px;
+  margin-left: 8px;
+  width: 36px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .img{
+    width: auto;
+    height: auto;
+  }
+}

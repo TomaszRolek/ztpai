@@ -1,0 +1,52 @@
+.home-component {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-area {
+  flex-grow: 0;
+}
+
+.search-area {
+  flex-grow: 0;
+}
+
+.chat-list-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.chat-area {
+  background: rgb(16,28,73);
+  background: linear-gradient(90deg, rgba(138,71,47,1) 10%, rgba(47,72,88,1) 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-component {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0;
+    order: 2;
+  }
+
+  .chat-list-area {
+    order: 1;
+  }
+
+  .chat-area {
+    width: 100%;
+    order: 3;
+    flex-grow: 1;
+  }
+}
